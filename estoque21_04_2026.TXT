@@ -1,0 +1,109 @@
+                                                              Posição do Estoque
+                                                                                                        Página      1/2
+                                                             TOTALITA
+                                                              (55)3261-1014                             Data 21/04/2026
+                                                              RUA PAULO MAGOGA
+     Códigoo:      Descrição                                                              Estoque Inicial     Estoque
+            32790  AUXILIAR O 002 3"0 KDM BRANCO LAQUEADO VOLUME                                    0,000     145,000
+            32791  AUXILIAR O 002 3"0 KDM CASTANHO CLARO VOLUME                                     0,000     147,000
+            32792  AUXILIAR O 002 3"0 KDM MEL VOLUME                                                0,000      50,000
+            32795  AUXILIAR O 002 4"6 KDM BRANCO LAQUEADO VOLUME                                    0,000      55,000
+            32794  AUXILIAR O 002 4"6 KDM CASTANHO CLARO VOLUME                                     0,000      98,000
+            32793  AUXILIAR O 002 4"6 KDM MEL VOLUME                                                0,000      25,000
+            32798  AUXILIAR O 010 3"0 KDM BRANCO LAQ VOLUME 1                                       0,000      73,000
+            32871  AUXILIAR O 010 3"0 KDM BRANCO LAQ VOLUME 2                                       0,000      77,000
+            32800  AUXILIAR O 010 3"0 KDM CAST CLARO VOLUME 1                                       0,000      29,000
+            32873  AUXILIAR O 010 3"0 KDM CAST CLARO VOLUME 2                                       0,000      32,000
+            32799  AUXILIAR O 010 3"0 KDM MEL VOLUME 1                                              0,000      31,000
+            32872  AUXILIAR O 010 3"0 KDM MEL VOLUME 2                                              0,000      30,000
+            32796  AUXILIAR O 010 4"6 KDM BRANCO LAQ VOLUME 1                                       0,000      30,000
+            32869  AUXILIAR O 010 4"6 KDM BRANCO LAQ VOLUME 2                                       0,000      29,000
+            32797  AUXILIAR O 010 4"6 KDM CAST CLARO VOLUME 1                                       0,000      42,000
+            32870  AUXILIAR O 010 4"6 KDM CAST CLARO VOLUME 2                                       0,000      41,000
+            32812  AUXILIAR O 010 4"6 KDM MEL VOLUME 1                                              0,000      25,000
+            32877  AUXILIAR O 010 4"6 KDM MEL VOLUME 2                                              0,000      24,000
+            32888  B 039 01 E 02 KD M BRANCO LAQ VOLUME ESC                                         0,000      32,000
+            32883  B 039 01 E 02 KD M CAST CLARO VOLUME ESC                                         0,000      32,000
+            32887  B 039 01 E 02 KD M MEL VOLUME ESC                                                0,000      17,000
+            32890  B 039 KD M BRANCO LAQ VOLUME BARRAS                                              0,000      -1,000
+            32889  B 039 KD M BRANCO LAQ VOLUME GRADE                                               0,000       9,000
+            32905  B 039 KD M BRANCO VOLUME PÉS                                                     0,000       8,000
+            32882  B 039 KD M CAST CLARO VOLUME BARRAS                                              0,000      22,000
+            32880  B 039 KD M CAST CLARO VOLUME GRADE                                               0,000       8,000
+            32881  B 039 KD M CAST CLARO VOLUME PÉS                                                 0,000      22,000
+            32886  B 039 KD M MEL VOLUME BARRAS                                                     0,000      13,000
+            32884  B 039 KD M MEL VOLUME GRADE                                                      0,000      13,000
+            32885  B 039 KD M MEL VOLUME PÉS                                                        0,000      12,000
+            32774  B 104 01 KD M BRANCO LAQUEADO VOLUME ESC                                         0,000      74,000
+            32777  B 104 01 KD M CAST CLARO VOLUME ESC                                              0,000      78,000
+            32779  B 104 01 KD M MEL VOLUME ESC                                                     0,000     106,000
+            32775  B 104 02 KD M BRANCO LAQUEADO  VOLUME ESC                                        0,000      88,000
+            32807  B 104 02 KD M CAST CLARO VOLUME ESC                                              0,000      52,000
+            32808  B 104 02 KD M MEL VOLUME ESCADA                                                  0,000      48,000
+            32845  B 104 KD M BRANCO LAQUEADO VOLUME BARRA                                          0,000     110,000
+            32806  B 104 KD M BRANCO LAQUEADO VOLUME GRADE                                          0,000      99,000
+            32846  B 104 KD M CAST CLARO VOLUME BARRA                                               0,000      92,000
+            32776  B 104 KD M CAST CLARO VOLUME GRADE                                               0,000      86,000
+            32848  B 104 KD M MEL VOLUME BARRA                                                      0,000      87,000
+            32778  B 104 KD M MEL VOLUME GRADE                                                      0,000      78,000
+            32784  B 105 01 E B 142 01 BRANCO LAQUEADO VOLUME ESCADA                                0,000      72,000
+            32785  B 105 01 E B 142 01 CAST CLARO VOLUME ESC                                        0,000      70,000
+            32780  B 105 01 E B 142 01 MEL VOLUME ESCADA                                            0,000      77,000
+            32809  B 105 02 E B 142 02 BRANCO LAQUEADO VOLUME ESC                                   0,000      99,000
+            32811  B 105 02 E B 142 02 CAST CLARO VOLUME ESC                                        0,000     164,000
+            32810  B 105 02 E B 142 02 MEL VOLUME ESC                                               0,000      90,000
+            32783  B 105 KDM BRANCO LAQUEADO VOLUME GRADE SOLTEIRO                                  0,000     106,000
+            32854  B 105 KDM CAST CLARO VOLUME BARRA                                                0,000     155,000
+            32782  B 105 KDM CAST CLARO VOLUME GRADE CASAL                                          0,000     155,000
+            32852  B 105 KDM CAST CLARO VOLUME GRADE SOLTEIRO                                       0,000     166,000
+            32853  B 105 KDM CAST CLARO VOLUME PÉS                                                  0,000     154,000
+            32851  B 105 KDM MEL VOLUME BARRA                                                       0,000     101,000
+            32781  B 105 KDM MEL VOLUME GRADE CASAL                                                 0,000     101,000
+            32849  B 105 KDM MEL VOLUME GRADE SOLTEIRO                                              0,000      82,000
+            32850  B 105 KDM MEL VOLUME PÉS                                                         0,000      98,000
+            32891  B 142 KDM BRANCO LAQUEADO VOLUME GRADE CASAL                                     0,000      25,000
+            32895  B 142 KDM CAST CLARO VOLUME GRADE CASAL                                          0,000      47,000
+            32898  B 142 KDM MEL VOLUME GRADE CASAL                                                 0,000      12,000
+            32858  B105  KDM BRANCO LAQUEADO VOLUME BARRAS                                          0,000     115,000
+            32855  B105  KDM BRANCO LAQUEADO VOLUME GRADE CASAL                                     0,000     106,000
+            32857  B105  KDM BRANCO LAQUEADO VOLUME PÉS                                             0,000     112,000
+            32892  B142  KDM BRANCO LAQ VOLUME GRADE SOLTEIRO                                       0,000      25,000
+            32893  B142  KDM BRANCO LAQUEADO VOLUME PÉS                                             0,000      23,000
+            32899  B142  KDM CAST CLARO  VOLUME GRADE SOLTEIRO                                      0,000      47,000
+     PoliGestor v. 9.9.3.30 (55) 3026-1961                                        Impresso por Emerson às 14:31:06
+                                                              Posição do Estoque
+                                                                                                        Página      2/2
+                                                             TOTALITA
+                                                              (55)3261-1014                             Data 21/04/2026
+                                                              RUA PAULO MAGOGA
+     Códigoo:      Descrição                                                              Estoque Inicial     Estoque
+            32897  B142  KDM CAST CLARO VOLUME PÉS                                                  0,000      46,000
+            32900  B142  KDM MEL  VOLUME GRADE SOLTEIRO                                             0,000      14,000
+            32901  B142  KDM MEL VOLUME PÉS                                                         0,000      14,000
+            32894  B142 KDM BRANCO LAQUEADO VOLUME BARRAS                                           0,000      44,000
+            32896  B142 KDM CAST CLARO VOLUME BARRAS                                                0,000      48,000
+            32902  B142 KDM MEL VOLUME BARRAS                                                       0,000      12,000
+            32864  C 723 3"0 KDM BRANCO LAQUEADO VOLUME BARRAS                                      0,000      11,000
+            32787  C 723 3"0 KDM BRANCO LAQUEADO VOLUME PAINÉIS                                     0,000      38,000
+            32906  C 723 3"0 KDM BRANCO VOLUME PÉS                                                  0,000      72,000
+            32863  C 723 3"0 KDM CAST CLARO VOLUME BARRAS                                           0,000      49,000
+            32786  C 723 3"0 KDM CAST CLARO VOLUME PAINÉIS                                          0,000      27,000
+            32862  C 723 3"0 KDM CAST CLARO VOLUME PÉS                                              0,000      48,000
+            32866  C 723 4"6 KDM BRANCO LAQUEADO VOLUME BARRAS                                      0,000      61,000
+            32788  C 723 4"6 KDM BRANCO LAQUEADO VOLUME PAINÉIS                                     0,000      57,000
+            32865  C 723 4"6 KDM BRANCO LAQUEADO VOLUME PÉS                                         0,000      72,000
+            32868  C 723 4"6 KDM CASTANHO CLARO VOLUME BARRAS                                       0,000      19,000
+            32789  C 723 4"6 KDM CASTANHO CLARO VOLUME PAINÉIS                                      0,000      35,000
+            32867  C 723 4"6 KDM CASTANHO CLARO VOLUME PÉS                                          0,000      55,000
+            32875  O 005 KDM BRANCA VOLUME BARRA                                                    0,000      46,000
+            32803  O 005 KDM BRANCA VOLUME CABECEIRA                                                0,000      46,000
+            32876  O 005 KDM CASTANHO VOLUME BARRA                                                  0,000      60,000
+            32822  O 005 KDM CASTANHO VOLUME CABECEIRA                                              0,000      60,000
+            32903  O 005 KDM MEL VOLUME BARRA                                                       0,000       6,000
+            32904  O 005 KDM MEL VOLUME CABECEIRA                                                   0,000       6,000
+            32874  O 016 KDM BRANCA VOLUME BARRAS                                                   0,000      12,000
+            32801  O 016 KDM BRANCA VOLUME GRADES                                                   0,000       4,000
+            32951  O 016 KDM BRANCA/CAST VOLUME BARRAS                                              0,000       0,000
+            32948  O 016 KDM BRANCA/CAST VOLUME GRADES                                              0,000       9,000
+                                                                                  TOTAL GERAL       0,000   5.341,000
+     PoliGestor v. 9.9.3.30 (55) 3026-1961                                        Impresso por Emerson às 14:31:06
