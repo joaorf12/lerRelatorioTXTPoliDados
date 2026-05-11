@@ -100,6 +100,7 @@ def tratar_nome_cor(x):
 # 2. LER E PROCESSAR TXT
 # ================================
 data_hoje = datetime.now().strftime("%d_%m_%Y")
+data_hora_hoje = datetime.now().strftime("%d_%m_%Y_%H_%M")
 dados = []
 
 caminho_arquivo = f"./estoques/estoque{data_hoje}.txt"
@@ -341,8 +342,11 @@ if os.path.exists(caminho_arquivo):
                     if "O010" in produto_planilha or "O016" in produto_planilha:
                         print(f"DEBUG BRANCO: Tentou '{produto_planilha}' com Vol '{volume_planilha}' mas não achou no DF_FINAL")
 
+    texto_cabecalho = f"CONTAGEM FÍSICA DE ESTOQUE       DATA: {datetime.now().strftime('%d/%m/%Y')}"
+    ws["A1"] = texto_cabecalho
+
     # Salvar arquivo
-    nome_arquivo = f"resultado_{data_hoje}.xlsx"
+    nome_arquivo = f"resultado_{data_hora_hoje}.xlsx"
 
     os.makedirs("resultado", exist_ok=True)
     caminho_arquivo = os.path.join("resultado", nome_arquivo)
