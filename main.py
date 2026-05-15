@@ -49,7 +49,15 @@ def normalizar_tipo(tipo):
 def extrair_modelo_avancado(desc):
     # Remove todos os espaços para não confundir "B 105" com "B105"
     desc_limpa = str(desc).upper().replace(" ", "")
-    
+
+    if "MOVE" in desc_limpa:
+        if "B105" in desc_limpa: return "MOVE B105"
+        if "O002" in desc_limpa in desc_limpa: return "MOVE O00230"
+        
+    if "PROJ" in desc_limpa:
+        if "B104" in desc_limpa: return "PROJ B104"
+        if "O002" in desc_limpa in desc_limpa: return "PROJ O00230"
+
     # Modelos Base (ordem: do mais específico para o mais genérico)
     if "B105" in desc_limpa: return "B105"
     if "B104" in desc_limpa: return "B104"
@@ -182,6 +190,10 @@ if os.path.exists(caminho_arquivo):
         "O016": {"CABECEIRA": "V1", "BARRA": "V2", "GRADE": "V1"},
         "O00230": {"": "V1"}, "O01030": {"V1": "V1", "V2": "V2"},
         "O00246": {"": "V1"}, "O01046": {"V1": "V1", "V2": "V2"},
+        "MOVE B105": {"GRADE CASAL": "V1", "GRADE": "V1","GRADE SOLTEIRO": "V2", "PÉS": "V3", "BARRA": "V4", "ESC": "V5"},
+        "MOVE O00230": {"": "V1"},
+        "PROJ B104": { "GRADE": "V1", "BARRA": "V2", "LASTRO": "V3", "ESC": "V4"},
+        "PROJ O00230": {"": "V1"},
     }
 
     def mapear_coluna(row):
@@ -237,7 +249,7 @@ if os.path.exists(caminho_arquivo):
 
         modelos_ordem = ["B105", "B104", "B142", "B039",
                         "O00230", "O00246", "O01030", "O01046",
-                        "C72330", "C72346", "O005", "O016"]
+                        "C72330", "C72346", "O005", "O016", "MOVE B105", "MOVE O00230", "PROJ B104", "PROJ O00230"]
 
         for modelo in modelos_ordem:
             grupo = df_final[df_final["MODELO"] == modelo].copy()
@@ -286,8 +298,12 @@ if os.path.exists(caminho_arquivo):
         "C72346": {"linha_volumes": 42, "linha_tipos": 43, "inicio_dados": 48, "fim_dados": 50},
         "O005": {"linha_volumes": 51, "linha_tipos": 52, "inicio_dados": 53, "fim_dados": 57},
         "O016": {"linha_volumes": 51, "linha_tipos": 52, "inicio_dados": 59, "fim_dados": 61},
-        "B142": {"linha_volumes": 62, "linha_tipos": 63, "inicio_dados": 64, "fim_dados": 68},
-        "B039": {"linha_volumes": 69, "linha_tipos": 70, "inicio_dados": 71, "fim_dados": 75},
+        "MOVE 105": {"linha_volumes": 63, "linha_tipos": 64, "inicio_dados": 65, "fim_dados": 67},
+        "MOVE 002": {"linha_volumes": 68, "linha_tipos": 69, "inicio_dados": 70, "fim_dados": 72},
+        "PROJ 104": {"linha_volumes": 74, "linha_tipos": 75, "inicio_dados": 76, "fim_dados": 76},
+        "PROJ 002": {"linha_volumes": 77, "linha_tipos": 77, "inicio_dados": 78, "fim_dados": 78},
+        "B142": {"linha_volumes": 80, "linha_tipos": 81, "inicio_dados": 82, "fim_dados": 86},
+        "B039": {"linha_volumes": 87, "linha_tipos": 88, "inicio_dados": 89, "fim_dados": 93},
     }
 
     # ================================
@@ -304,8 +320,6 @@ if os.path.exists(caminho_arquivo):
 
     for modelo, config in blocos.items():
         linha_vols = df_raw.iloc[config["linha_volumes"]]
-
-        print(f"\n>>> Processando Bloco: {modelo}") # Debug de bloco
         
         for i in range(config["inicio_dados"], config["fim_dados"] + 1):
             produto_planilha = str(df_raw.iloc[i, 1]).strip()
@@ -320,11 +334,16 @@ if os.path.exists(caminho_arquivo):
                 # Dentro do loop, ajuste a busca do match:
                 produto_limpo = produto_planilha.replace(" ", "").upper()
 
+                # Se estamos rodando um bloco "MOVE" ou "PROJ" e a planilha não escreveu isso, a gente força!
+                if "MOVE" in modelo and not produto_limpo.startswith("MOVE"):
+                    produto_limpo = "MOVE" + produto_limpo
+                elif "PROJ" in modelo and not produto_limpo.startswith("PROJ"):
+                    produto_limpo = "PROJ" + produto_limpo
+
                 match = df_final[
                     (df_final["PRODUTO"].str.replace(" ", "") == produto_limpo) & 
                     (df_final["COLUNA_DESTINO"] == volume_planilha)
                 ]
-                
                             # Se falhar a busca exata, tenta uma busca parcial para o BRANCO
                 if match.empty and "BR" in produto_limpo:
                     match = df_final[
@@ -335,7 +354,6 @@ if os.path.exists(caminho_arquivo):
 
                 if not match.empty:
                     valor_estoque = float(match["ESTOQUE_QUANTIDADE"].values[0])
-                    print(f"GRAVANDO: {produto_planilha} em L:{i+1} C:{col+1} VALOR:{valor_estoque}")
                     ws.cell(row=i+1, column=col+1, value=valor_estoque)
                 else:
                     # DEBUG CRÍTICO: Se for um produto que deveria ter estoque, me diga por que falhou
